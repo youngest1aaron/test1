@@ -1,0 +1,88 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Website Layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        body {
+            background-color: white;
+            margin: 0;
+        }
+
+        .header {
+            background-color: aqua;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                /* Change color on hover */
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <a data-flickr-embed="true" href="https://www.flickr.com/photos/157738582@N06/32039860928/in/dateposted-public/" title="Capture"><img src="https://farm5.staticflickr.com/4824/32039860928_472b7d7118_b.jpg" width="840" height="253" alt="Capture"></a>
+        <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    </div>
+    <input type="button" id="learn" value="alert me" />
+    <div class="topnav">
+        <a href="#">Contact Us</a>
+        <a href="#">Other Websites</a>
+        <a href="#">Jobs</a>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="http://clipart-library.com/img1/1903476.jpg" alt="Snow" style="width:60%">
+            <p> YounginSoul TSHIRT $19.99 </p>
+        </div>
+        <div class="column">
+            <img src="http://clipart-library.com/img1/1903476.jpg" alt="Forest" style="width:60%">
+            <p> YounginSoul TSHIRT $19.99 </p>
+
+        </div>
+        <div class="column">
+            <img src="http://clipart-library.com/img1/1903476.jpg" alt="Mountains" style="width:60%">
+            <p> YounginSoul TSHIRT $19.99 </p>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
